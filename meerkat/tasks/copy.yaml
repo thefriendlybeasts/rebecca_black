@@ -1,0 +1,15 @@
+addon:
+  files:
+    - expand: true
+      cwd: '<%= m.addon.dir %>/'
+      src:
+        - '*.php'
+      dest: '<%= m.sitesPath %>/<%= m.site.dir %>/<%= m.site.root %>/_add-ons/<%= m.addon.dir %>/'
+
+vendor:
+  files:
+    - expand: true
+      cwd: '<%= m.addon.dir %>/vendor/'
+      src:
+        - '**'
+      dest: '<%= m.sitesPath %>/<%= m.site.dir %>/<%= m.site.root %>/_add-ons/<%= m.addon.dir %>/vendor/'

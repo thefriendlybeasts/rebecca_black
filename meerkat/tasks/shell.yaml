@@ -1,0 +1,2 @@
+# rmUser:
+#   command: 'if test -f "/Users/curtisblackwell/Sites/statamic-demo/public_html/_config/users/asdf.yaml"; then rm /Users/curtisblackwell/Sites/statamic-demo/public_html/_config/users/asdf.yaml; fi'

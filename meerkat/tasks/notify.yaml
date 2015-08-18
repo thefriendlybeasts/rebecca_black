@@ -1,0 +1,14 @@
+addon:
+  options:
+    message: '<%= m.addon.name %> files copied.'
+
+
+vendor:
+  options:
+    message: Vendor files updated.
+
+
+notify_hooks:
+  options:
+    success: true
+    title: '<%= m.addon.name %>'
