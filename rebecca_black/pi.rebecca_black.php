@@ -27,6 +27,7 @@ class Plugin_rebecca_black extends Plugin
             case 's':
             case 'seconds':
                 $divisor = 1;
+                break;
 
             case 'ms':
             case 'milliseconds':
@@ -42,7 +43,7 @@ class Plugin_rebecca_black extends Plugin
         $s = $this->core->getSecondsUntil($to);
 
 
-        return floor($s / $divisor);
+        return intval($s / $divisor);
     }
 
 
